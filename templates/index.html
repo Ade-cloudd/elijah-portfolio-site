@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}About | Elijah Adebayo{% endblock %}
+{% block content %}
+<section class="hero">
+    <div class="hero-text">
+        <h1>Elijah Adebayo</h1>
+        <p class="subtitle">Cloud &amp; DevOps Engineer building secure, automated, and reliable infrastructure.</p>
+        <p class="intro">
+            I work across infrastructure design, CI/CD, Linux administration, IAM,
+            and monitoring, with a strong focus on automation and applied security.
+        </p>
+        <a class="cta-button" href="{{ url_for('contact') }}">Get in touch</a>
+    </div>
+
+    <div class="status-panel">
+        <div class="status-row">
+            <span class="label">STATUS</span>
+            <span class="value">Available</span>
+        </div>
+        <div class="status-row">
+            <span class="label">CLOUD</span>
+            <span class="value">AWS</span>
+        </div>
+        <div class="status-row">
+            <span class="label">CERT</span>
+            <span class="value">SAA-C03</span>
+        </div>
+    </div>
+</section>
+{% endblock %}

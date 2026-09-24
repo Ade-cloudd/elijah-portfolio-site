@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Projects | Elijah Adebayo{% endblock %}
+{% block content %}
+<section>
+    <h2>Technical Projects</h2>
+
+    <div class="project">
+        <h3>This Portfolio Site <a href="https://elijahadebayo.com" target="_blank">elijahadebayo.com</a></h3>
+        <p>Containerised Flask application deployed to AWS ECS Fargate behind an Application Load Balancer, running on Gunicorn. Backed by a DynamoDB contact form, served over a custom domain with HTTPS via Cloudflare.</p>
+    </div>
+
+    <div class="project">
+        <h3>Multi-Tier VPC Architecture</h3>
+        <p>Custom VPC with public/private subnetting, an Application Load Balancer, EC2 in a private subnet, and RDS isolated in its own subnet tier.</p>
+    </div>
+
+    <div class="project">
+        <h3>Serverless REST API</h3>
+        <p>Serverless CRUD API using API Gateway, Lambda, and DynamoDB, with IAM roles scoped per function.</p>
+    </div>
+
+    <div class="project">
+        <h3>Local Kubernetes Multi-Service Deployment</h3>
+        <p>Multi-service application on a local Kubernetes cluster using Deployments, Services, ConfigMaps, and a Helm chart.</p>
+    </div>
+</section>
+{% endblock %}
